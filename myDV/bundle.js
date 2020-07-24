@@ -83,7 +83,7 @@
     
   };
 
-  d3.csv('https://github.com/rasbiharipal/testpub/blob/master/data.csv').then(data => {
+  d3.csv('data.csv').then(data => {
   	data.forEach(d => {
     	d.population=+d.population*1000;
     });

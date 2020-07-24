@@ -94,7 +94,7 @@ const render = data => {
   
 };
 
-csv('https://github.com/rasbiharipal/testpub/blob/master/data.csv').then(data => {
+csv('data.csv').then(data => {
 	data.forEach(d => {
   	d.population=+d.population*1000;
   });
